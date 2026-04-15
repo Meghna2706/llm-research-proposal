@@ -1,0 +1,76 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\title{Explainable Multimodal Hate Speech Detection using LLM-guided Reasoning}
+
+\author{\IEEEauthorblockN{Meghna Subramani}
+\IEEEauthorblockA{Undergraduate Student\\
+Email: your-email@example.com}}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Hate speech detection is a critical challenge in moderating online platforms. While deep learning models have improved detection accuracy, they often lack interpretability and struggle with multimodal data such as text and images. This paper proposes an explainable multimodal framework integrating Large Language Models (LLMs) with deep learning techniques to enhance both performance and transparency.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Hate Speech Detection, Explainable AI, LLMs, Multimodal Learning
+\end{IEEEkeywords}
+
+\section{Introduction}
+Social media platforms have seen a surge in harmful content. Existing systems lack interpretability and multimodal understanding. This work proposes a framework combining LLMs with multimodal learning.
+
+\section{Methodology}
+
+\subsection{Problem Formulation}
+Let $T$ represent textual input and $I$ represent image input.
+
+Text embedding:
+\begin{equation}
+E_T = f_{text}(T)
+\end{equation}
+
+Image embedding:
+\begin{equation}
+E_I = f_{image}(I)
+\end{equation}
+
+Multimodal fusion:
+\begin{equation}
+E = W_1 E_T + W_2 E_I
+\end{equation}
+
+Classification:
+\begin{equation}
+y = \sigma(WE + b)
+\end{equation}
+
+Explanation generation:
+\begin{equation}
+X = LLM(E, y)
+\end{equation}
+
+\subsection{Architecture}
+The system consists of text encoder (BERT), image encoder (CNN), fusion layer, classifier, and LLM explanation module.
+
+\section{Expected Results}
+Improved accuracy, interpretability, and multimodal reasoning.
+
+\section{Conclusion}
+This work presents a novel explainable multimodal framework for hate speech detection.
+
+\section*{References}
+\begin{enumerate}
+\item J. Devlin et al., "BERT: Pre-training of Deep Bidirectional Transformers," NAACL, 2019.
+\item A. Radford et al., "Learning Transferable Visual Models," ICML, 2021.
+\item A. Vaswani et al., "Attention Is All You Need," NeurIPS, 2017.
+\item M. Ribeiro et al., "Why Should I Trust You?," KDD, 2016.
+\item D. Kiela et al., "Hateful Memes Challenge," NeurIPS, 2020.
+\end{enumerate}
+
+\end{document}
