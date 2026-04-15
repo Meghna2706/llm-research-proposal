@@ -93,8 +93,8 @@ We propose an **LLM-guided multimodal framework** that:
 
 ## 👩‍💻 Author
 **Meghna Subramani**  
-- GitHub: https://github.com/
-- LinkedIn: https://linkedin.com/in/your-profile  
+- GitHub: https://github.com/Meghna2706
+- LinkedIn: www.linkedin.com/in/meghna-subramani-9a64482bb
 
 ---
 
